@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="myshop.saa.myshop.LoginActivity"
+    android:theme="@android:style/Theme.Translucent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    android:background="@drawable/kirana_logo_bg">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:background="@drawable/abc_edit_text_material"
+        android:text="@string/email"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:background="@drawable/abc_edit_text_material"
+        android:text="@string/password"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up" android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/signUp"
+            android:onClick="navigateSignUp"/>
+        <Space android:layout_width="fill_parent" android:layout_height="50dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

@@ -6,7 +6,6 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="myshop.saa.myshop.SignUpActivity"
     android:theme="@android:style/Theme.Translucent">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,8 +19,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/firstName"
             android:text="@string/first_name"
-            android:background="@color/abc_background_cache_hint_selector_material_light"
+            android:background="@drawable/abc_edit_text_material"
             style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:inputType="text"
             />
 
         <EditText
@@ -29,46 +29,52 @@
             android:layout_height="wrap_content"
             android:id="@+id/lastName"
             android:text="@string/last_name"
-            android:background="@color/abc_background_cache_hint_selector_material_light"
+            android:background="@drawable/abc_edit_text_material"
             style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:inputType="text"
             />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/email"
-            android:background="@color/abc_background_cache_hint_selector_material_light"
+            android:background="@drawable/abc_edit_text_material"
             android:text="@string/email"
-            style="@android:style/TextAppearance.DeviceDefault.Medium"/>
+            style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:inputType="textEmailAddress"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/password"
-            android:background="@color/abc_background_cache_hint_selector_material_light"
+            android:background="@drawable/abc_edit_text_material"
             android:text="@string/password"
-            style="@android:style/TextAppearance.DeviceDefault.Medium"/>
+            style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:inputType="textPassword"/>
 
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/phoneNumber"
-            android:background="@color/abc_background_cache_hint_selector_material_light"
+            android:background="@drawable/abc_edit_text_material"
             android:text="@string/contact_number"
-            style="@android:style/TextAppearance.DeviceDefault.Medium"/>
+            style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:inputType="phone"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/location"
-            android:background="@color/abc_background_cache_hint_selector_material_light"
+            android:background="@drawable/abc_edit_text_material"
             android:text="@string/location"
-            style="@android:style/TextAppearance.DeviceDefault.Medium"/>
+            style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:inputType="textPostalAddress"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
+
 </RelativeLayout>
